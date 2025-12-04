@@ -1,5 +1,6 @@
 run = "npm start"
 entrypoint = "server.js"
+modules = ["nodejs-20", "web"]
 
 [packager]
 language = "nodejs"
@@ -8,3 +9,6 @@ language = "nodejs"
   packageSearch = true
   guessImports = true
   enabledForHosting = false
+
+[nix]
+channel = "stable-25_05"
